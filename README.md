@@ -63,13 +63,14 @@ These are open data for public. It doesn't need an API key to call these methods
 
 
 ## List Trades
-* The base endpoint is: https://api-crm.techcrm.net/{login}
+* The base endpoint is: https://api-crm.techcrm.net/{type}/{id}
 * All endpoints return either a JSON object or array.
 #### Request
-| Name | Type | Mandatory | Description | value | Mehod |
-|-|-|-|-|-|-|
-| `key` | STRING | yes | API Key | | `POST` |
-| `method` | STRING | yes | Type method | trades | `POST` |
+| Name | Type | Mandatory | Description | value |
+|-|-|-|-|-|
+| `key` | STRING | yes | API Key |
+| `method` | STRING | yes | Type method | trades |
+| `type` | STRING | yes | Type method | login / ticket |
 
 #### Response
 ```json
